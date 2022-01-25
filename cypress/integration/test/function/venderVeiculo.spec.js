@@ -1,5 +1,5 @@
 /// <reference types="Cypress"/> 
-import * as ELEMENT from '../../pages/venderVeiculos.element'
+import * as ELEMENT from '../../pages/function/venderVeiculos.element'
 
 require('cypress-xpath')
 

@@ -1,5 +1,5 @@
 /// <reference types="Cypress"/> 
-import * as ELEMENT from '../../pages/compraCarro.element';
+import * as ELEMENT from '../../pages/function/compraCarro.element';
 
 describe('Campra de carros', () => {
     beforeEach(() => {
@@ -18,7 +18,7 @@ describe('Campra de carros', () => {
         
     });
 
-    it.only('Deve preencher informações para entrar em contato com o vendedor - BDD #3', () => {
+    it('Deve preencher informações para entrar em contato com o vendedor - BDD #3', () => {
         ELEMENT.verificarFinanciamentoVeiculo()
         ELEMENT.preencherNome()
         ELEMENT.preencherEmail()

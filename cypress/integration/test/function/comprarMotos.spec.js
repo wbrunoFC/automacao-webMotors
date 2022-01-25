@@ -1,5 +1,5 @@
 /// <reference types="Cypress"/> 
-import * as ELEMENT from '../../pages/compraMotos';
+import * as ELEMENT from '../../pages/function/compraMotos';
 require('cypress-xpath')
 
 describe('Comprar motos', () => {
@@ -25,6 +25,6 @@ describe('Comprar motos', () => {
         ELEMENT.preencherEmail()
         ELEMENT.preencherTelefone()
         ELEMENT.enviarMensagem()
-        cy.get('.Banner__title > h2').should('contain', 'Mensagem enviada!')
+        cy.get('.Banner__title > h2', {timeout:60000}).should('contain', 'Mensagem enviada!')
     });
 });

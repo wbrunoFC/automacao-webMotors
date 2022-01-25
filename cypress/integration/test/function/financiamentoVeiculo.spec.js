@@ -1,5 +1,5 @@
 /// <reference types="Cypress"/> 
-import * as ELEMENT from '../../pages/ficanciamento.element';
+import * as ELEMENT from '../../pages/function/ficanciamento.element';
 
 describe('Financiamento', () => {
     beforeEach(() => {
